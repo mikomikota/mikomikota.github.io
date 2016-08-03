@@ -1,0 +1,118 @@
+<style>
+html, body, .container {
+  height: 100%;
+	background-color: #C5FCDC;
+	margin: 10px;
+	padding: 0;
+	overflow: hidden;
+}
+
+.cadeado {
+	position: relative;
+	width: 50%;
+	max-width: 365px;
+  min-width: 200px;
+	margin: 0 auto;
+	top: 40%;
+}
+.coracao {
+	position: relative;
+	width: 35%;
+	padding-bottom: 35%;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%) rotate(-135deg);
+	-webkit-transform: translate(-50%, -50%) rotate(-135deg);
+	-o-transform: translate(-50%, -50%) rotate(-135deg);
+	-ms-transform: translate(-50%, -50%) rotate(-135deg);
+	transform: translate(-50%, -50%) rotate(-135deg);
+	background-color: #ff4351;
+}
+.coracao:before,
+.coracao:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	padding-bottom: 100%;
+	border-radius: 50%;
+	background-color: inherit;
+  z-index: 1;
+}
+.coracao:before {
+	top: 50%;
+}
+.coracao:after {
+	left: 50%;
+}
+.plus {
+  width: 15%;
+	padding-bottom: 15%;
+  background-color: #000;
+  border-radius: 50%;
+  content: "";
+	display: block;
+	position: absolute;
+  top: -42%;
+	left: 43%;
+}
+
+.plus:before {
+  content: "";
+	display: block;
+	position: absolute;
+  width: 45%;
+	padding-bottom: 130%;
+  background-color: #000;
+  top: 10%;
+  left: 29%;
+}
+
+.plus:after {
+  content: "";
+	display: block;
+	position: absolute;
+  width: 160%;
+	padding-bottom: 140%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border: .8ch solid #000;
+  top: -200%;
+  left: -30%;
+  z-index: -1;
+}
+
+.text{
+  position: absolute;
+  display: block;
+  top: 80%;
+  left: 42%;
+}
+
+.move {
+  font-family: "Kaushan Script";
+  font-size: 1.5em;
+  border-right: .06em solid #000;
+  background: #C5FCDC;
+	width: 18.6ch;
+  margin: 0.5ch;
+  padding: 0 1ch;
+  display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation: digitacao 1.7s steps(28, end), barra .1s step-end infinite alternate;
+}
+
+@-webkit-keyframes digitacao { 
+    0% { width: 0; } 
+}
+@-webkit-keyframes barra { 
+    50% { border-color: transparent; } 
+}
+
+</style>
+  <h1 class="move">Seni seviyorum yovisinom.</h1> 
+<div class="cadeado animated infinite pulse">
+  <div class="coracao"></div>
+  <div class="plus"></div>
+</div>
